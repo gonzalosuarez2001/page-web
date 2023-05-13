@@ -1,0 +1,19 @@
+<div class="container-fluid d-flex justify-content-center novedades_contenedor">
+  <div class="d-flex flex-wrap justify-content-center">
+    {{#each novedades}}
+    <div class="p-0 shadow rounded m-4 novedades_card">
+      <a class="novedades_edit_link" href="/admin/novedades/modificar/{{id}}">
+        {{{imagen}}}
+        {{#if noImagen}}
+        <div class="d-flex justify-content-center align-items-center novedades_falseimage">
+          <p class="text-secondary novedades_text">No se cargo ninguna imagen.</p>
+        </div>
+        {{/if}}
+        <div class="row text-center">
+          <h4 class="h4 col-12 py-3 color_violet">{{titulo}}</h4>
+        </div>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+</div>

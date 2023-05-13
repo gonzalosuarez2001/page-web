@@ -1,0 +1,31 @@
+/*----------General----------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-violet: rgb(161,116,202);
+}
+
+/*----------Main----------*/
+
+.contenedor_footer {
+  background-color: rgb(222, 226, 230);
+}
+
+.footer_icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer_text {
+  font-size: 15px;
+}
+
+@media (max-width: 578px) {
+  .footer_text {
+    padding-top: 15px;
+  }
+}

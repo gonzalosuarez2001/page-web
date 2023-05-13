@@ -1,0 +1,17 @@
+/*----------General----------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-violet: rgb(161,116,202);
+}
+
+/*----------Main----------*/
+
+.beneficios_icon {
+  color: var(--color-violet);
+  font-size: 2rem;
+}

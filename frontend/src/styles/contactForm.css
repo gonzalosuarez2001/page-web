@@ -1,0 +1,40 @@
+/*----------General----------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-violet: rgb(161,116,202);
+}
+
+/*----------Main----------*/
+.contenedor_contacto {
+  margin-top: 190px;
+  margin-bottom: 134px;
+  padding: 3rem !important;
+  max-width: 800px !important;
+  width: 90% !important;
+}
+
+.contacto_button {
+  background-color: var(--color-violet);
+}
+
+.contacto_button:hover {
+  background-color: rgb(131,86,172);
+  transition: 0.1s;
+}
+
+.color_violet {
+  color: var(--color-violet) !important;
+}
+
+@media (max-width: 578px) {
+  .contenedor_contacto {
+    margin-top: 100px;
+    margin-bottom: 44px;
+    padding: 1.5rem !important;
+  }
+}

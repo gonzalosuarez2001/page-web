@@ -1,0 +1,37 @@
+<div class="container align-items-center bg-white border shadow rounded-3 p-4 modificarnovedades_contenedor">
+
+    <div class="mb-3 pb-2 text-center border-bottom border-2">
+        <p class="h2 color_violet">Editar Novedad</p>
+    </div>
+
+    <div>
+        <form method="post" action='/admin/novedades/modificar' enctype="multipart/form-data">
+            <input style="display:none" value="{{novedad.id}}" type="text" name="id">
+            <div class="mb-3">
+                <input placeholder="Titulo" value="{{novedad.titulo}}" type="text" class="form-control" name="titulo">
+            </div>
+            <div class="mb-3">
+                <input placeholder="Subtitulo" value="{{novedad.subtitulo}}" type="text" class="form-control"
+                    name="subtitulo">
+            </div>
+            <div class="mb-3">
+                <textarea placeholder="Cuerpo" type="text" class="form-control form_cuerpo" name="cuerpo"
+                    rows="3">{{novedad.cuerpo}}</textarea>
+            </div>
+            <div class="mb-3 form-group">
+                <label for="imagen" class="col-12">
+                    <input class="form-control" type="file" name="imagen" id="imagen">
+                </label>
+                <br>
+                <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+            </div>
+            {{#if error}}
+            <p class="mt-3 text-secondary p-3 rounded-3 form_warning">No se modifico la novedad.</p>
+            {{/if}}
+            <div class="row justify-content-evenly">
+            <button type="submit" class="btn btn-primary col-5">Modificar</button>
+            <a class="btn btn-danger col-6" href="/admin/novedades/delete/{{novedad.id}}">Eliminar</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/stylesheets/nav.css"/>
+    <link rel="stylesheet" href="/stylesheets/footer.css"/>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="stylesheet" href="/stylesheets/novedades.css">
+    <link rel="stylesheet" href="/stylesheets/addNovedades.css">
+    <link rel="stylesheet" href="/stylesheets/novedadesModify.css">
+    <title>#</title>
+</head>
+
+<nav class="navbar navbar-expand-md bg-light shadow fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-2 navbar_logo" href="/admin/novedades">
+            <span class="color_violet">O</span>pen<span class="color_violet">T</span>ecnology
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-2 mb-0">
+                    <a style="color:#fff" class="bg-primary rounded-3 p-2 nav-link nav_add" href="/admin/novedades/add">
+                        Agregar
+                    </a>
+                </li>
+                <li class="nav-item mx-2 mb-0">
+                    <a style="color:#fff" class="bg-danger rounded-3 p-2 nav-link nav_close" href="/admin/novedades/logout">
+                        Cerrar Sesión
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <body class="body">
+        {{{body}}}
+    </body>
+<footer>
+    <div class="container-fluid contenedor_footer">
+        <div class="col align-items-center py-3">
+            <p class="mb-0 text-center footer_text">
+                Copyright © 2022 OpenTecnology. Todos los Derechos Reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,32 @@
+.novedades_contenedor {
+
+    height: 300px;
+    max-width: 800px;
+    margin-left: 45px !important;
+}
+
+.novedades_image {
+
+    object-fit: cover;
+    border-top-left-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+    height: 300px;
+}
+
+@media screen and (max-width: 578px) {
+
+    .novedades_contenedor {
+
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    .novedades_image {
+
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 7.5px;
+        border-top-left-radius: 7.5px;
+        
+    }
+}

@@ -1,0 +1,37 @@
+.novedades_contenedor {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.novedades_card {
+  width: 250px;
+}
+
+.novedades_card:hover {
+  scale: 1.1;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.novedades_edit_link {
+  text-decoration: none;
+}
+
+.novedades_edit_link > img {
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.novedades_falseimage {
+  height: 250px !important;
+  background-color: rgb(238, 238, 238);
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+}
+
+.novedades_text {
+  font-size: 16px;
+}

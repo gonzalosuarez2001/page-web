@@ -1,0 +1,17 @@
+<form action='/admin/login' method="post" class="container-fluid bg-white border shadow rounded-3 contenedor_login">
+    <div class="pb-2 text-center border-bottom border-2">
+        <p class="h2 color_violet">Administrador</p>
+    </div>
+    <div>
+        <input class="col-12 form-control h5 my-3" placeholder="Usuario" type="text" name="user" required />
+        <input class="col-12 form-control h5 mb-3" placeholder="Contraseña" type="password" name="password" required />
+    </div>
+    {{#if error}}
+    <p class="text-center text-secondary mb-4">Usuario y/o contraseña incorrectos</p>
+    {{/if}}
+    <div>
+        <button class="btn btn-primary col-12">
+            Ingresar
+        </button>
+    </div>
+</form>

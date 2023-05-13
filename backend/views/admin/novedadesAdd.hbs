@@ -1,0 +1,30 @@
+<div class="container align-items-center bg-white border shadow rounded-3 p-4 agregarnovedades_contenedor">
+
+    <div class="mb-3 pb-2 text-center border-bottom border-2">
+        <p class="h2 color_violet">Agregar Novedad</p>
+    </div>
+
+    <div>
+        <form method="post" action='/admin/novedades/add' enctype="multipart/form-data">
+            <div class="mb-3">
+                <input placeholder="Titulo" type="text" class="form-control" name="titulo">
+            </div>
+            <div class="mb-3">
+                <input placeholder="Subtitulo" type="text" class="form-control" name="subtitulo">
+            </div>
+            <div class="mb-3">
+                <textarea placeholder="Cuerpo" type="text" class="form-control form_cuerpo" name="cuerpo"
+                    rows="3"></textarea>
+            </div>
+            <div class="mb-3 row justify-content-center">
+                <label for="imagen"><input class="form-control" type="file" name="imagen" id="imagen"></label>
+            </div>
+            {{#if error}}
+            <p class="bg-light border mt-3 text-secondary p-2 rounded-3 text-center">Todos los campos son requeridos.</p>
+            {{/if}}
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-primary col-6">Agregar</button>
+            </div>
+        </form>
+    </div>
+</div>
